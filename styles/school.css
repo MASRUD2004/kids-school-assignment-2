@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+   
+}
 .quicksand-font {
   font-family: "Quicksand", serif;
   font-optical-sizing: auto;
@@ -181,10 +186,12 @@
     color: #9dff00e7;
 }
 .arrow-container{
+    display: flex;
     justify-content: center;
     align-items: center;
-    margin: 60px 630px  60px 830px;
-    gap: 50px;
+    /* margin: 60px 630px  60px 830px; */
+    gap: 10px;
+    /* border: 4px solid red; */
 }
 .arrow{
     text-align: center;
@@ -202,6 +209,7 @@
     text-align: center;
     font-size: 46px;
     font-weight: bold;
+    
 }
 .Our-Stories-card-section{
     background-image: url(../assets/bg.png), linear-gradient(to top, rgba(255, 0, 0, 0.1),white);
@@ -210,20 +218,77 @@
     padding: 80px 140px;
     gap: 20px;
     justify-content: center;
+    
 }
 .section-1-card-1{
     width: 540px;
     height: 630px;
     border-radius: 24px;
-    border: 0.1px solid black  ;
+    /* border: 0.1px solid black  ; */
+    position: relative;
+    background-color: white;
+   
+    
 }
-section-1-card-1-img{
+.section-1-card-1-img{
     width: auto;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+}
+.card-1-h{
+padding: 30px;
+font-size: 24px;
+font-weight: 700;
+
+}
+.card-1-p{
+    padding-left: 30px;
+    color: #666666;
+}
+.date{
+    background-color: #3CD8E8;
+    width: 27%;
+    padding: 10px;
+    border-radius: 16px;
+    color: white;
+  position: absolute;
+  top: 50%;
+  left: 6%;
+
+
 }
 .Our-Stories-section-2{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
     width: 600px;
+    
+}
+.date2{
+    background-color: #95B226;
+    width: 50%;
+    padding: 10px;
+    border-radius: 16px;
+    color: white;
+  position: absolute;
+  top: 50%;
+  left: 6%;
+}
+.section-2-card-1{
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
+    
+}
+.section-2-card-img{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.section-2-card-h{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    font-weight: bolder;
 }
 /* footer section */
 .footer{
@@ -243,9 +308,7 @@ social-icons{
     display: flex;
 }
 @media screen and (max-width: 576px) {
-    body{
-        margin: 30px 100px 20px ;
-    }
+   
     .heading-title, .heading-title, .nav-btn, .nav-items{
         display: none;
     }
@@ -259,12 +322,14 @@ social-icons{
         justify-content: space-between;
         margin: 0PX;
         width: 370px;
+        padding-left: 12px;
     }
     .banner{
         flex-direction: column-reverse;
         margin: 0px;
         width: 370px;
         height: 725px;
+        padding-left: 12px;
     }
     .banner-part1{
         align-items: center;
@@ -286,6 +351,7 @@ social-icons{
     .cards-section{
         margin: 60px 0px 50px 0px;
         width: 370px;
+        padding-left: 12px;
     }
     .card-container{
         flex-direction: column;
@@ -335,7 +401,15 @@ social-icons{
     }
     .section-2-card-1, .section-2-card-2, .section-2-card-3, .section-2-card-4{
         width: 170px;
-        height: 170px;
+        /* height: 170px; */
+    }
+    .date2{
+    width: 70%;
+    padding: 4px;
+    font-size: 12px;
+    }
+    .section-2-card-h{
+        font-size: 12px;
     }
     .section-2-card-img{
         width: 170px;
@@ -343,6 +417,7 @@ social-icons{
     }
     .Our-Stories-section{
         width: 370px;
+        padding-left: 12px;
     }
     ..Our-Stories-card-section{
         padding: 0px;
@@ -352,6 +427,9 @@ social-icons{
         margin-top: 80px;
         flex-direction: column;
         gap: 20px;
-        width: 370px;
+        width: 100%;
+    }
+    .link, .about-school,.footer-title, .footer-description{
+        color:white;
     }
 }
