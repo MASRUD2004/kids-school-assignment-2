@@ -244,7 +244,7 @@ social-icons{
 }
 @media screen and (max-width: 576px) {
     body{
-        margin: 30px;
+        margin: 30px 100px 20px ;
     }
     .heading-title, .heading-title, .nav-btn, .nav-items{
         display: none;
